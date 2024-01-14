@@ -12,7 +12,7 @@ html {
 body {
   background-color: #0c0c0c;
   padding-top: 5rem;
-  height: 2000px;
+  height: 5000px;
 }
 
 .header {
@@ -285,6 +285,84 @@ li {
   display: flex;
 }
 
+.home3 {
+  margin: auto;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  gap: 2rem;
+  transition: 0.3s ease;
+}
+
+.home3content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: auto;
+  max-width: 1300px;
+  align-items: center;
+  padding: 5rem 2rem;
+  gap: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.home3 h1 {
+  color: #ddd7d0;
+  font-size: 40px;
+  margin-top: 55px;
+  text-align: end;
+  transition: 0.3s ease;
+}
+
+.home3 h1 span {
+  color: #ff9e3d;
+  font-weight: 900;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.cards {
+  background-color: rgb(37, 37, 37);
+  border: 1px solid #ffffff48;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.cards:hover {
+  border-color: #ddd7d09d;
+  background-color: rgb(32, 32, 32);
+}
+
+.cards img {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.cards img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards h3 {
+  color: #ddd7d0;
+  padding-bottom: 2rem;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.cards a {
+  text-decoration: none;
+  color: #ddd7d0;
+  transition: 0.3s ease;
+}
+
+.cards:hover a {
+  color: #ff9e3d;
+}
+
+.cards a:active {
+  color: #e08931;
+}
+
 @media (max-width: 800px) {
   .home1 {
     display: flex;
@@ -323,6 +401,9 @@ li {
   }
   .iimg2 img {
     margin-bottom: 50px;
+  }
+  .home3content {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -363,5 +444,11 @@ li {
   }
   .home2content p {
     font-size: 12px;
+  }
+  .home3content {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .cards {
+    max-width: 230px;
   }
 }
